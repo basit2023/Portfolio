@@ -10,14 +10,14 @@ const sendGridTransport = require("nodemailer-sendgrid-transport");
 //     },
 //   })
 // );
-sgMail.setApiKey(process.env.API_SENDGRID || "1AAItCM2buliAvMYtjEWio5F7M16rmqx");
+sgMail.setApiKey(process.env.API_SENDGRID );
 
 // Create a Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: 'SendGrid',
   auth: {
-    user: 'SKc9e496c9ab697b39bca079375d17d07b', // Twilio SendGrid uses 'apikey' as the username
-    pass: process.env.API_SENDGRID || "1AAItCM2buliAvMYtjEWio5F7M16rmqx",
+    user: 'apikey', // Twilio SendGrid uses 'apikey' as the username
+    pass: process.env.API_SENDGRID,
   },
 });
 
