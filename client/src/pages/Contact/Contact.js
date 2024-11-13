@@ -1,39 +1,35 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import axios from "axios";
 import "./Contact.css";
 import Rotate from "react-reveal/Rotate";
 import LightSpeed from "react-reveal/LightSpeed";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+
 const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
 
   //handle submit button
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      if (!name || !email || !msg) {
-        toast.error("PLease Provide all fields");
-      }
-      const res = await axios.post("/api/v1/portfolio/sendEmail", {
-        name,
-        email,
-        msg,
-      });
-      //validation success
-      if (res.data.success) {
-        toast.success(res.data.message);
-        setname("");
-        setEmail("");
-        setMsg("");
-      } else {
-        toast.error(res.data.message);
-      }
-    } catch (error) {
-      console.log(error);
+    if (!name || !email || !msg) {
+      toast.error("Please provide all fields");
+      return;
     }
+    
+    // Construct the mailto link
+    const subject = encodeURIComponent(`Message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}`);
+    const mailtoLink = `mailto:engr.basitofficial@gmail.com?subject=${subject}&body=${body}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
+
+    // Clear form fields after sending the message
+    setname("");
+    setEmail("");
+    setMsg("");
   };
 
   return (
@@ -47,7 +43,7 @@ const Contact = () => {
                   <LightSpeed>
                     <img
                       src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
-                      alt="ocontact"
+                      alt="contact"
                       className="image"
                     />
                   </LightSpeed>
@@ -64,17 +60,14 @@ const Contact = () => {
                         <a href="https://www.linkedin.com/in/engr-abdul-basit/" target="_blank" rel="noopener noreferrer">
                           <BsLinkedin color="blue" size={30} className="ms-2" />
                         </a>
-
                         <a href="https://github.com/basit2023/" target="_blank" rel="noopener noreferrer">
                           <BsGithub color="black" size={30} className="ms-2" />
                         </a>
-
                         <a href="https://www.facebook.com/babarbasit.ali" target="_blank" rel="noopener noreferrer">
                           <BsFacebook color="blue" size={30} className="ms-2" />
                         </a>
                       </h6>
                     </div>
-
                     <div className="row px-3 mb-4">
                       <div className="line" />
                       <small className="or text-center">OR</small>

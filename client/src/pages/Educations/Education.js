@@ -28,6 +28,19 @@ const Education = () => {
             Electrical Engineer, Namal University Minwali
             </h4>
           </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "white", color: "black" }}
+            contentArrowStyle={{ borderRight: "7px solid  white" }}
+            date="2015 - 2017"
+            iconStyle={{ background: "#138781", color: "#fff" }}
+            icon={<MdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">FSc Pre-Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+            Governer Model School for Boys, Khar Bajaur Agency
+            </h4>
+          </VerticalTimelineElement>
           
         </VerticalTimeline>
       </div>
