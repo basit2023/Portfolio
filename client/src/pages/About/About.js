@@ -6,23 +6,21 @@ const About = () => {
     <>
       <Jump>
         <div className="about" id="about">
-          <div className="row">
-            <div className="col-md-8 col-xl-6 col-lg-6 col-xs-12 about-img">
+          <div className="about-card glass">
+            <div className="about-img">
               <img
                 src="images/basitp.JPG"
                 alt="profile_pic"
               />
             </div>
-            <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content">
-              <h1>About me</h1>
+            <div className="about-content">
+              <h1 className="gradient-text">About Me</h1>
               <p>
-              Passionate and results-driven full-stack developer with a strong foundation in Next.js full stack and MERN stack technologies. As a dynamic engineering professional, I bring hands-on expertise in JavaScript, HTML, Css, React.js, Next.Js, tailwindcss, Bootstrap, Node.js, Express.js, MongoDB, and MySQL. My journey extends beyond coding, encompassing comprehensive training in DevOps from SkipQ, where I honed my skills in leveraging AWS services and various cutting-edge tools. Additionally, I have mentored and trained over 20 students in MERN stack development, contributing to their growth and technical success.
-              <br/>
-              What sets me apart is not just technical proficiency, but a collaborative spirit
-              that thrives in team environments. Whether contributing to projects independently 
-              or as part of a team, I am driven by a strong work ethic and an unwavering 
-              commitment to achieving success. Join me in crafting innovative solutions and 
-              driving organizational growth. Let's build the future together!
+                I am Abdul Basit, a results-driven Full Stack and Mobile Application Developer focused on MERN stack development, React.js, Next.js, Node.js, Express.js, MongoDB, and React Native. I build SEO-friendly websites, business dashboards, ERP systems, service platforms, e-commerce stores, and cloud-ready applications for startups and growing companies.
+                <br/><br/>
+                My work combines frontend performance, backend APIs, database design, mobile app development, and DevOps practices across AWS, Docker, Kubernetes, and CI/CD. I care about fast loading pages, accessible UI, clean code, search visibility, and practical product features that help real users complete their work.
+                <br/><br/>
+                I have experience with multi-client ERP systems, role-based access control, admin portals, WordPress SEO optimization, and production deployments. I enjoy turning complex business requirements into simple, scalable, and maintainable digital products.
               </p>
             </div>
           </div>

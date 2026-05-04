@@ -9,11 +9,11 @@ import {
   SiPython,
   SiMongodb,
   SiMysql,
-  SiTypescript,
   SiGithub,
   SiDocker,
   SiExpress,
   SiAwslambda,
+  SiKubernetes,
 } from "react-icons/si";
 export const TechstackList = [
   {
@@ -46,6 +46,11 @@ export const TechstackList = [
     _id: 7,
     name: "React JS",
     icon: SiReact,
+  },
+  {
+    _id: 6,
+    name: "Next JS",
+    icon: TbBrandNextjs,
   },
   {
     _id: 8,
@@ -101,5 +106,10 @@ export const TechstackList = [
     name: "Docker ",
     icon: SiDocker,
   },
-  
+  {
+    _id: 18,
+    name: "Kubernetes",
+    icon: SiKubernetes,
+  },
+
 ];

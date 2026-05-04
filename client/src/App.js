@@ -20,24 +20,26 @@ function App() {
         <ToastContainer />
         <MobileNav />
         <Layout />
-        <div className="container">
+        <div className="main-content">
           <About />
+          <WorkExp />
           <Education />
           <Techstack />
           <Projects />
-          <WorkExp />
           <Contact />
         </div>
-        <div className="footer pb-3 ms-3">
+        <div className="footer pb-5">
           <Tada>
-            <h4 className="text-center">Made With 😍 Abdul Basit &copy; 2023</h4>
+            <h4 className="text-center" style={{color: 'var(--text-dim)', fontWeight: 400}}>
+              Designed & Built with ❤️ by Abdul Basit &copy; {new Date().getFullYear()}
+            </h4>
           </Tada>
         </div>
       </div>
       <ScrollToTop
         smooth
-        color="#f29f67"
-        style={{ backgroundColor: "#1e1e2c", borderRadius: "80px" }}
+        color="#00f2fe"
+        style={{ backgroundColor: "rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", borderRadius: "50%", boxShadow: "0 4px 15px rgba(0,0,0,0.3)" }}
       />
     </>
   );

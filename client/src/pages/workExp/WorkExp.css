@@ -1,6 +1,7 @@
 .work {
-  background-color: #1387812a;
-  margin-left: 140px;
+  background-color: var(--section-bg);
+  margin: 50px 0;
+  border-radius: 8px;
 }
 
 .work-exp {
@@ -9,7 +10,7 @@
 
 .work-exp h2 {
   font-weight: bold;
-  color: #1e1e2c;
+  color: var(--text-main);
 }
 
 .work-exp hr {
@@ -23,16 +24,16 @@
 }
 
 .work-exp .vertical-timeline-element-subtitle {
-  color: #1e1e2c78;
+  color: var(--timeline-muted);
+}
+
+.work-exp p {
+  color: var(--timeline-card-text);
 }
 
 /* ===== DARK MODE ========== */
-#dark .work {
-  background-color: #643a6b;
-}
-
 #dark .work-exp h2 {
-  color: white;
+  color: var(--text-main);
 }
 
 /* =================== */

@@ -17,21 +17,60 @@ const Education = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "white", color: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid  white" }}
-            date="2017 - 2021"
+            contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+            contentArrowStyle={{ borderRight: "7px solid var(--timeline-card-bg)" }}
+            date="Aug 2023 - Nov 2023"
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<MdSchool />}
           >
-            <h3 className="vertical-timeline-element-title">Bs(Hons)</h3>
+            <h3 className="vertical-timeline-element-title">IT Bootcamp - Full Stack Development</h3>
             <h4 className="vertical-timeline-element-subtitle">
-            Electrical Engineer, Namal University Minwali
+            Generation Program, Lahore
             </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "white", color: "black" }}
-            contentArrowStyle={{ borderRight: "7px solid  white" }}
+            contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+            contentArrowStyle={{ borderRight: "7px solid var(--timeline-card-bg)" }}
+            date="Mar 2023 - Jun 2023"
+            iconStyle={{ background: "#138781", color: "#fff" }}
+            icon={<MdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">Junior Full Stack Bootcamp</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+            Datics.ai, Lahore
+            </h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+            contentArrowStyle={{ borderRight: "7px solid var(--timeline-card-bg)" }}
+            date="Jan 2022 - Dec 2022"
+            iconStyle={{ background: "#138781", color: "#fff" }}
+            icon={<MdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">DevOps Trainee</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+            SkipQ, Pakistan
+            </h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+            contentArrowStyle={{ borderRight: "7px solid var(--timeline-card-bg)" }}
+            date="Nov 2017 - Aug 2021"
+            iconStyle={{ background: "#138781", color: "#fff" }}
+            icon={<MdSchool />}
+          >
+            <h3 className="vertical-timeline-element-title">BSc (Hons)</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+            Electrical Engineer, Namal University, Mianwali
+            </h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+            contentArrowStyle={{ borderRight: "7px solid var(--timeline-card-bg)" }}
             date="2015 - 2017"
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<MdSchool />}
@@ -41,8 +80,21 @@ const Education = () => {
             Governer Model School for Boys, Khar Bajaur Agency
             </h4>
           </VerticalTimelineElement>
-          
+
         </VerticalTimeline>
+
+        <h2 className="col-12 mt-5 mb-1 text-center text-uppercase">
+          Certifications
+        </h2>
+        <hr />
+
+        <ul className="certifications-list" style={{listStyleType: "none", paddingLeft: "20px"}}>
+          <li style={{marginBottom: "10px"}}>✓ DevOps Engineer — SkipQ</li>
+          <li style={{marginBottom: "10px"}}>✓ MERN Stack Development — Datics.ai / P@SHA</li>
+          <li style={{marginBottom: "10px"}}>✓ Full Stack Developer — Game Train</li>
+          <li style={{marginBottom: "10px"}}>✓ Full Stack Engineer Career Path — Codecademy</li>
+          <li style={{marginBottom: "10px"}}>✓ DevOps Basics Learning Path — KodeKloud</li>
+        </ul>
       </div>
     </>
   );

@@ -1,100 +1,131 @@
 .project {
-  margin: 50px 0px;
-  margin-left: 140px;
-}
-
-.project hr {
-  color: #138781;
-  width: 400px;
-  margin: 10px auto;
-}
-
-.project h2 {
-  font-weight: bold;
-  color: #138781;
+  padding: 100px 0;
 }
 
 #ads {
-  margin: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 2rem;
 }
 
-#ads .card-notify-badge {
-  position: absolute;
-  left: -10px;
-  top: -20px;
-  background: #f29f67;
-  text-align: center;
-  border-radius: 30px 30px 30px 30px;
-  color: black;
-  padding: 5px 10px;
-  font-size: 14px;
-}
-
-.project .card img {
-  height: 150px;
+#ads > [class*="col-"] {
   width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.card-detail-badge {
-  background-color: #e0b50f;
-  text-align: center;
-  border-radius: 30px 30px 30px 30px;
-  color: black;
-  padding: 5px 10px;
-  font-size: 14px;
-}
-.card-image-overly {
-  font-size: 20px;
-}
-.card-image-overly span {
-  display: inline-block;
-  margin-left: 5px;
+.project .card {
+  position: relative;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project .card:hover {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
-  transition: all 1s ease;
+  transform: translateY(-12px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project .card:hover img {
+  transform: scale(1.1);
+}
+
+.card-notify-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--primary);
+  color: #000;
+  padding: 4px 15px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-title h6, .ad-title h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.project-description {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  min-height: 72px;
+}
+
+.card-detail-badge {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-dim);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  border: 1px solid var(--glass-border);
 }
 
 .ad-btn {
-  text-transform: uppercase;
-  width: 150px;
-  height: 40px;
-  display: block;
-  text-align: center;
-  background-color: #138781;
-  color: white;
-  border-radius: 80px;
-  font-size: 16px;
-  line-height: 35px;
+  margin-top: auto;
+  display: inline-block;
+  padding: 10px 25px;
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 50px;
   text-decoration: none;
-  margin: 20px auto 20px auto;
-  overflow: hidden;
-  position: relative;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .ad-btn:hover {
-  background-color: white;
-  color: #138781;
-  background: transparent;
-  border: 2px solid #138781;
-  transition: all 0.5s ease;
-  box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
+  background: var(--primary);
+  color: #000;
 }
 
-/* =============================== */
 @media (max-width: 600px) {
-  .project {
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
+  #ads {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.25rem;
   }
-  .project hr {
-    width: 280px;
-  }
-  .project .card {
-    margin-top: 30px;
+  .project-description {
+    min-height: auto;
   }
 }
+

@@ -76,6 +76,19 @@ const MobileNav = () => {
                 </div>
                 <div className="nav-link">
                   <Link
+                    to="work"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={100}
+                    onClick={handleMenuClick}
+                  >
+                    <FcPortraitMode />
+                    Work Experience
+                  </Link>
+                </div>
+                <div className="nav-link">
+                  <Link
                     to="education"
                     spy={true}
                     smooth={true}
@@ -87,7 +100,6 @@ const MobileNav = () => {
                     Education
                   </Link>
                 </div>
-
                 <div className="nav-link">
                   <Link
                     to="techstack"
@@ -113,19 +125,6 @@ const MobileNav = () => {
                   >
                     <FcVideoProjector />
                     Projects
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="work"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                    onClick={handleMenuClick}
-                  >
-                    <FcPortraitMode />
-                    Work Experince
                   </Link>
                 </div>
                 <div className="nav-link">

@@ -23,36 +23,44 @@ const Home = () => {
           )}
         </div>
         <div className="container home-content">
-          <Fade right>
-            <h2>Hi 👋 I'm a</h2>
-            <h1>
+          <Fade bottom>
+            <h2>Hi there, I'm</h2>
+            <h1 className="gradient-text">
               <Typewriter
                 options={{
                   strings: [
-                    "FullStack Developer!",
-                    "DevOps Engineer!",
+                    "Abdul Basit",
+                    "FullStack Developer",
+                    "Mobile Developer",
+                    "DevOps Engineer",
                   ],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h1>
+            <p className="home-summary">
+              Full stack developer in Pakistan building MERN stack web apps, React Native mobile apps, ERP systems, dashboards, WordPress websites, AWS cloud deployments, Docker workflows, and SEO-ready business websites.
+            </p>
           </Fade>
-          <Fade bottom>
+          <Fade bottom delay={200}>
             <div className="home-buttons">
               <a
-                className="btn btn-hire"
+                className="btn-modern btn-hire"
                 href="https://api.whatsapp.com/send?phone=923032144362"
                 rel="noreferrer"
                 target="_blank"
               >
                 Hire Me
               </a>
-              <a className="btn btn-cv" href={Resume} download="Abdul_Basit.pdf">
-                My Resume
+              <a className="btn-modern btn-cv" href={Resume} download="Abdul_Basit.pdf">
+                View Resume
               </a>
             </div>
           </Fade>
+          <div className="sr-only">
+            Abdul Basit portfolio, MERN stack developer, React developer, Node.js developer, React Native developer, mobile app developer, full stack engineer, DevOps engineer, AWS developer, Docker, Kubernetes, ERP software developer, WordPress SEO developer in Lahore Pakistan.
+          </div>
         </div>
       </div>
     </>

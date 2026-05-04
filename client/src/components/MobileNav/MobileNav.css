@@ -3,24 +3,26 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 1200;
 }
 
 .mobile-nav-header {
   height: 50px;
   width: 100%;
-  background-color: #1e1e1e;
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
   padding: 8px;
 }
 
 .mobile-nav-header .mobile-nav-icon {
-  color: white;
+  color: var(--text-main);
   cursor: pointer;
 }
 
 .mobile-nav-title {
   margin-left: 20px;
-  color: #f29f67;
+  color: var(--primary);
   font-weight: bold;
   text-transform: capitalize;
   vertical-align: middle;
@@ -30,10 +32,13 @@
 .mobile-nav-menu .nav-items {
   height: auto;
   width: 200px;
-  background-color: #1e1e1e;
+  background-color: var(--nav-bg);
+  border-right: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
   padding: 10px;
   padding-bottom: 20px;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 8px;
 }
 
 @media (min-width: 600px) {

@@ -17,14 +17,38 @@ const WorkExp = () => {
           <hr />
          
             
-          <VerticalTimeline lineColor="#1e1e2c">
+          <VerticalTimeline lineColor="var(--timeline-line)">
           <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
               contentArrowStyle={{
-                borderRight: "7px solid  white",
+                borderRight: "7px solid var(--timeline-card-bg)",
               }}
-              date="Dec 2023 - Current"
+              date="May 2025 - March 2026"
+              iconStyle={{ background: "#1e1e2c", color: "#fff" }}
+              icon={<SiReact />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Full Stack & Mobile Application Developer
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Allure Digital
+              </h4>
+              <p>
+              Designed and developed a multi-client ERP system with advanced authentication, authorization, and RBAC. <br/>
+              Built a cross-platform mobile app using React Native integrated with the ERP backend. <br/>
+              Collaborated on WordPress-based web projects, optimizing performance, responsiveness, and SEO. <br/>
+              Worked closely with designers and backend teams to ensure smooth API integration and data synchronization. <br/>
+              Utilized MERN Stack (MongoDB, Express.js, React, Node.js) and React Native for scalable, high-performance solutions.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+              contentArrowStyle={{
+                borderRight: "7px solid var(--timeline-card-bg)",
+              }}
+              date="Dec 2023 - Present"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
@@ -35,45 +59,38 @@ const WorkExp = () => {
                 House of Elaan
               </h4>
               <p>
-              Worked on the ProSale Project, implementing a system with various types of administrators, each with differentiated 
-              access and roles. <br/>
-              Designed, developed, and completed the Client Portal for both administrators and users, streamlining communication 
-              and management functions. <br/>
-              Update the main website for House of Elaan, showcasing the company's offerings and enhancing the user experience.
-              <br/>
-              Trained and mentored numerous interns in MERN stack development, fostering new talent and sharing expertise.
-
+              Led and completed major company projects including the ProSale Project with multi-role admin system. <br/>
+              Designed and built a Client Portal improving management and communication efficiency. <br/>
+              Enhanced company website for improved UX and engagement. <br/>
+              Trained and mentored interns in MERN Stack development.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
               contentArrowStyle={{
-                borderRight: "7px solid  white",
+                borderRight: "7px solid var(--timeline-card-bg)",
               }}
-              date=" 01/01/2023 – 01/08/2023"
+              date="Jan 2023 – Aug 2023"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                Part Time DevOps Engineer
+                DevOps Engineer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 Wise 360 Solution
               </h4>
               <p>
-              Worked as a Part-Time DevOps Engineer at Wise360, specializing in AWS cloud infrastructure 
-              management and optimization.
-              <br/>
-              Worked extensively on Hostinger, deploying and managing multiple applications, ensuring their availability 
-and performance.
+              Managed and optimized AWS cloud infrastructure. <br/>
+              Deployed and maintained multiple applications on Hostinger.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
               contentArrowStyle={{
-                borderRight: "7px solid  white",
+                borderRight: "7px solid var(--timeline-card-bg)",
               }}
               date="Sept 2023 - Dec 2023"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
@@ -86,14 +103,34 @@ and performance.
                 Game Train
               </h4>
               <p>
-              Worked on Main (MERN) Technologies, ReatJs, NodeJs, ExpressJS, Mongose, including JavaScript, HTML, CSS, Bootstrap
+              Worked on MERN stack technologies including React.js, Node.js, Express.js, and MongoDB with JavaScript, HTML, CSS, and Bootstrap.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
               contentArrowStyle={{
-                borderRight: "7px solid  white",
+                borderRight: "7px solid var(--timeline-card-bg)",
+              }}
+              date="Freelance"
+              iconStyle={{ background: "#1e1e2c", color: "#fff" }}
+              icon={<SiReact />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                WordPress Developer
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Freelance
+              </h4>
+              <p>
+              Designed and developed custom WordPress websites with tailored functionality and SEO optimization.
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
+              contentArrowStyle={{
+                borderRight: "7px solid var(--timeline-card-bg)",
               }}
               date="2020 - 2022"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
@@ -106,28 +143,28 @@ and performance.
                 Datics.ai
               </h4>
               <p>
-              Worked on Main (MERN) Technologies, ReatJs, NodeJs, ExpressJS, Mongose, including JavaScript, HTML, CSS, Bootstrap. 
-              
+              Hands-on training in HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB.
               </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "white", color: "#1e1e2c" }}
+              contentStyle={{ background: "var(--timeline-card-bg)", color: "var(--timeline-card-text)" }}
               contentArrowStyle={{
-                borderRight: "7px solid  white",
+                borderRight: "7px solid var(--timeline-card-bg)",
               }}
-              date="Dec. 2021 - May 2022"
+              date="Jan 2022 – Dec 2022"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
               <h3 className="vertical-timeline-element-title">
-                DevOps Engineer
+                DevOps Trainee
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 SkipQ
               </h4>
               <p>
-                Worked at SkepQ as DevOps traine, where i have worked on AWS cloud and other tools and technologies that are using for DevOps enginering.
+                Built and deployed cloud-native web applications using AWS, Docker, and Kubernetes. <br/>
+                Automated CI/CD pipelines and implemented Infrastructure-as-Code (IaC).
               </p>
             </VerticalTimelineElement>
           </VerticalTimeline>
