@@ -2,4 +2,4 @@ User-agent: *
 Disallow:
 Allow: /
 
-Sitemap: https://portfolio-abdul-basits-projects.vercel.app/sitemap.xml
+Sitemap: https://portfolio-abdul-basits-projects-7d6a06a1.vercel.app/sitemap.xml
