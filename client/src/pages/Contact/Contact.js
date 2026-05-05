@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import axios from "axios";
 import "./Contact.css";
 import Rotate from "react-reveal/Rotate";
 import LightSpeed from "react-reveal/LightSpeed";
@@ -9,27 +10,38 @@ const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [loading, setLoading] = useState(false);
 
   //handle submit button
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!name || !email || !msg) {
-      toast.error("Please provide all fields");
-      return;
+    try {
+      if (!name || !email || !msg) {
+        toast.error("Please provide all fields");
+        return;
+      }
+      setLoading(true);
+      const res = await axios.post("/api/v1/portfolio/sendEmail", {
+        name,
+        email,
+        msg,
+      });
+      //validation success
+      if (res.data.success) {
+        toast.success(res.data.message);
+        setname("");
+        setEmail("");
+        setMsg("");
+        setLoading(false);
+      } else {
+        toast.error(res.data.message);
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("Something went wrong");
+      setLoading(false);
     }
-    
-    // Construct the mailto link
-    const subject = encodeURIComponent(`Message from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}`);
-    const mailtoLink = `mailto:engr.basitofficial@gmail.com?subject=${subject}&body=${body}`;
-
-    // Open the mailto link
-    window.location.href = mailtoLink;
-
-    // Clear form fields after sending the message
-    setname("");
-    setEmail("");
-    setMsg("");
   };
 
   return (
@@ -86,8 +98,8 @@ const Contact = () => {
                   onChange={(e) => setMsg(e.target.value)}
                 />
               </div>
-              <button className="btn-submit" onClick={handleSubmit}>
-                SEND MESSAGE
+              <button className="btn-submit" onClick={handleSubmit} disabled={loading}>
+                {loading ? "SENDING..." : "SEND MESSAGE"}
               </button>
             </Rotate>
           </div>

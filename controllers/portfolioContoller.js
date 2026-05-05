@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmailController = (req, res) => {
+const sendEmailController = async (req, res) => {
   try {
     const { name, email, msg } = req.body;
 
@@ -33,7 +33,7 @@ const sendEmailController = (req, res) => {
       });
     }
     //email matter
-    transporter.sendMail({
+    await transporter.sendMail({
       to: "engr.basitofficial@gmail.com",
       from: "engr.basitofficial@gmail.com",
       subject: "Regarding Mern Portfolio App",
@@ -49,7 +49,7 @@ const sendEmailController = (req, res) => {
 
     return res.status(200).send({
       success: true,
-      message: "Your Message Send Successfully",
+      message: "Your Message Sent Successfully",
     });
   } catch (error) {
     console.log(error);
