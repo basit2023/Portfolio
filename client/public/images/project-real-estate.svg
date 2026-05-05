@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Real estate marketing website</title>
+  <desc id="desc">A local portfolio thumbnail showing property cards and a real estate landing page.</desc>
+  <rect width="800" height="450" fill="#10131f"/>
+  <rect x="62" y="56" width="676" height="338" rx="24" fill="#171b2b"/>
+  <path d="M130 302 V178 l104 -72 l104 72 v124z" fill="#26304b"/>
+  <path d="M104 190 l130 -92 l130 92" fill="none" stroke="#00f2fe" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="202" y="226" width="62" height="76" rx="8" fill="#10131f"/>
+  <rect x="428" y="108" width="190" height="54" rx="14" fill="#232a42"/>
+  <rect x="428" y="194" width="224" height="42" rx="12" fill="#26304b"/>
+  <rect x="428" y="262" width="178" height="42" rx="12" fill="#26304b"/>
+  <rect x="428" y="330" width="138" height="16" rx="8" fill="#4facfe"/>
+  <text x="428" y="143" fill="#f6f8ff" font-family="Arial, sans-serif" font-size="25" font-weight="700">Property Leads</text>
+</svg>

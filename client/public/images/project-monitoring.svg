@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Web health monitoring project</title>
+  <desc id="desc">A local portfolio thumbnail showing cloud monitoring, uptime checks, and alerts.</desc>
+  <rect width="800" height="450" fill="#10131f"/>
+  <rect x="60" y="60" width="680" height="330" rx="24" fill="#171b2b"/>
+  <path d="M156 300 c-42 0 -76 -32 -76 -72 c0 -36 27 -66 64 -71 c18 -42 59 -69 107 -69 c57 0 105 39 117 91 c42 5 74 39 74 80 c0 45 -38 81 -85 81 h-201z" fill="#26304b"/>
+  <path d="M124 272 h70 l26 -62 l45 114 l34 -82 h82" fill="none" stroke="#00f2fe" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="506" y="104" width="154" height="64" rx="16" fill="#232a42"/>
+  <rect x="506" y="198" width="154" height="64" rx="16" fill="#232a42"/>
+  <rect x="506" y="292" width="154" height="64" rx="16" fill="#232a42"/>
+  <circle cx="540" cy="136" r="12" fill="#00f2fe"/>
+  <circle cx="540" cy="230" r="12" fill="#4facfe"/>
+  <circle cx="540" cy="324" r="12" fill="#7bdff2"/>
+  <text x="566" y="143" fill="#f6f8ff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Uptime</text>
+  <text x="566" y="237" fill="#f6f8ff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Alerts</text>
+  <text x="566" y="331" fill="#f6f8ff" font-family="Arial, sans-serif" font-size="20" font-weight="700">AWS</text>
+</svg>

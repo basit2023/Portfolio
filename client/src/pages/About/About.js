@@ -9,7 +9,7 @@ const About = () => {
           <div className="about-card glass">
             <div className="about-img">
               <img
-                src="images/basitp.JPG"
+                src="images/basitp.jpeg"
                 alt="profile_pic"
               />
             </div>

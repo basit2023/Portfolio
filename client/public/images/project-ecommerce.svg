@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">E-commerce store project</title>
+  <desc id="desc">A local portfolio thumbnail showing online store product cards and checkout.</desc>
+  <rect width="800" height="450" fill="#10131f"/>
+  <rect x="58" y="52" width="684" height="346" rx="24" fill="#171b2b"/>
+  <rect x="100" y="96" width="600" height="42" rx="12" fill="#232a42"/>
+  <rect x="110" y="180" width="150" height="150" rx="18" fill="#26304b"/>
+  <rect x="324" y="180" width="150" height="150" rx="18" fill="#26304b"/>
+  <rect x="538" y="180" width="150" height="150" rx="18" fill="#26304b"/>
+  <path d="M146 250 h70 l-10 38 h-48 z" fill="none" stroke="#00f2fe" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M360 250 h70 l-10 38 h-48 z" fill="none" stroke="#4facfe" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M574 250 h70 l-10 38 h-48 z" fill="none" stroke="#7bdff2" stroke-width="10" stroke-linejoin="round"/>
+  <rect x="130" y="350" width="108" height="14" rx="7" fill="#46506f"/>
+  <rect x="344" y="350" width="108" height="14" rx="7" fill="#46506f"/>
+  <rect x="558" y="350" width="108" height="14" rx="7" fill="#46506f"/>
+  <text x="112" y="126" fill="#f6f8ff" font-family="Arial, sans-serif" font-size="26" font-weight="700">MERN Store</text>
+</svg>

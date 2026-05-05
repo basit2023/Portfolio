@@ -52,8 +52,9 @@ const Contact = () => {
           <div className="contact-img d-none d-lg-block">
             <LightSpeed>
               <img
-                src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="contact"
+                src="/images/contact-portfolio.svg"
+                alt="Contact Abdul Basit"
+                loading="lazy"
               />
             </LightSpeed>
           </div>

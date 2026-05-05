@@ -16,8 +16,9 @@ const Projects = () => {
                 <div className="card-image">
                   <span className="card-notify-badge">Full Stack & Mobile</span>
                   <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="prosale"
+                    src="/images/project-prosale.svg"
+                    alt="ProSale sales management dashboard"
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-body">
@@ -44,26 +45,28 @@ const Projects = () => {
             <div className="col-md-4 mb-4">
               <div className="card glass">
                 <div className="card-image">
-                  <span className="card-notify-badge">Service Platform</span>
+                  <span className="card-notify-badge">Business ERP</span>
                   <img
-                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="brothersfix"
+                    src="/images/project-brothersfix.svg"
+                    alt="Brothers Fix warehouse and inventory mobile ERP app"
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-body">
                   <div className="ad-title">
-                    <h5>Brothers Fix - Service App</h5>
+                    <h5>Brothers Fix - Warehouse ERP</h5>
                   </div>
                   <p className="project-description">
-                    Service booking and operations app built for cleaner customer requests, team assignment, and reliable mobile-first field workflows.
+                    Multi-client business ERP with mobile app support for warehouse operations, inventory management, service workflows, and team task tracking.
                   </p>
                   <div className="mb-3">
                     <span className="card-detail-badge">React Native</span>
-                    <span className="card-detail-badge">Express</span>
-                    <span className="card-detail-badge">Redux</span>
+                    <span className="card-detail-badge">Inventory</span>
+                    <span className="card-detail-badge">Multi Client ERP</span>
                   </div>
                   <div className="d-flex gap-2">
-                    <a className="ad-btn w-100" href="https://app.brothersfix.com/" target="_blank" rel="noreferrer">View</a>
+                    <a className="ad-btn w-100" href="https://app.brothersfix.com/" target="_blank" rel="noreferrer">Web</a>
+                    <a className="ad-btn w-100" href="https://play.google.com/store/apps/details?id=com.brothersfix.brothersfix" target="_blank" rel="noreferrer">App</a>
                   </div>
                 </div>
               </div>
@@ -75,8 +78,9 @@ const Projects = () => {
                 <div className="card-image">
                   <span className="card-notify-badge">E-commerce</span>
                   <img
-                    src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="project1"
+                    src="/images/project-ecommerce.svg"
+                    alt="MERN e-commerce store project"
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-body">
@@ -101,8 +105,9 @@ const Projects = () => {
                 <div className="card-image">
                   <span className="card-notify-badge">DevOps</span>
                   <img
-                    src="https://images.unsplash.com/photo-1504868584819-f8eec7b600fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="project3"
+                    src="/images/project-monitoring.svg"
+                    alt="Web health monitoring cloud dashboard"
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-body">
@@ -128,8 +133,9 @@ const Projects = () => {
                 <div className="card-image">
                   <span className="card-notify-badge">Real Estate</span>
                   <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="/images/project-real-estate.svg"
                     alt="Elaan Marketing real estate website"
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-body">
@@ -155,8 +161,9 @@ const Projects = () => {
                 <div className="card-image">
                   <span className="card-notify-badge">Website Tool</span>
                   <img
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="/images/project-fastsitecheck.svg"
                     alt="Fast Site Check website performance and SEO tool"
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-body">

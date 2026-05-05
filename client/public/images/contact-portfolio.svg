@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Contact Abdul Basit</title>
+  <desc id="desc">A local portfolio contact thumbnail with message cards and developer profile elements.</desc>
+  <rect width="800" height="600" fill="#10131f"/>
+  <rect x="72" y="70" width="656" height="460" rx="30" fill="#171b2b"/>
+  <circle cx="232" cy="232" r="86" fill="#26304b"/>
+  <circle cx="232" cy="204" r="34" fill="#00f2fe"/>
+  <path d="M166 314 c20 -50 112 -50 132 0" fill="#4facfe"/>
+  <rect x="380" y="152" width="228" height="46" rx="14" fill="#232a42"/>
+  <rect x="380" y="230" width="286" height="46" rx="14" fill="#26304b"/>
+  <rect x="380" y="308" width="248" height="46" rx="14" fill="#26304b"/>
+  <rect x="380" y="402" width="150" height="20" rx="10" fill="#00f2fe"/>
+  <path d="M146 418 h172" stroke="#46506f" stroke-width="16" stroke-linecap="round"/>
+  <text x="380" y="184" fill="#f6f8ff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Connect with me</text>
+</svg>
